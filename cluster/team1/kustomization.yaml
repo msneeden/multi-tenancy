@@ -5,6 +5,9 @@ resources:
   - psp.yaml
 bases:
   - ../../base/flux/
+  - ./flagger/
+  - ./common/
+  - ./team1/
 patchesStrategicMerge:
   - flux-patch.yaml
 configMapGenerator:
